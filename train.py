@@ -46,7 +46,7 @@ def tokenize(text):
 
     clean_tokens = []
     for word in words:
-        clean_word = lemmatiser.lemmatize(word).strip() #.lower()
+        clean_word = lemmatiser.lemmatize(word).lower().strip() #
         clean_tokens.append(clean_word)
 
     return clean_tokens
